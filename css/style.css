@@ -33,6 +33,9 @@
   .nav-item:hover .nav-link:hover {
     color: #eee; }
 
+.carousel .carousel-inner .carousel-item .imagen-carousel {
+  height: 100vh; }
+
 .navbar-expand-lg .navbar-collapse {
   justify-content: flex-end; }
 

@@ -33,6 +33,16 @@
 
 }
 
+.carousel{
+    .carousel-inner{
+        .carousel-item{
+            .imagen-carousel{
+                height: 100vh;
+            }
+        }
+    }
+}
+
 .navbar-expand-lg{
     .navbar-collapse{
         justify-content: flex-end;
