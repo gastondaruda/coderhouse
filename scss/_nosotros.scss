@@ -14,26 +14,63 @@
         
     }
     .container{
-        
         width: 100%;
         margin: 0 20px;
         margin-top: 20px;
+        display: grid;
+        
         .row{
-            
+            /*
             display: grid;
-            grid-template-columns: 2, 1fr;
+            grid-template-columns: repeat(2, 34rem);
             gap: 20px;
             grid-template-areas:
-            "column1 column2"
-            "column3 column4"
-            "column5 column6";
+            "part1 part2"
+            "part3 part4"
+            "part5 part6";
             align-items: center;
+            */
+            display: grid;
+            grid-template-columns: repeat(1, 100vw);
+            gap: 20px;
+            grid-template-areas:
+            "part1"
+            "part2"
+            "part4"
+            "part3"
+            "part5"
+            "part6";
+        align-items: center;
+            .grid-c1{
+                
+                grid-area: part1;
+            }
+            .grid-c2{
+                
+                grid-area: part2;
+            }
+            .grid-c3{
+                
+                grid-area: part3;
+            }
+            .grid-c4{
+                
+                grid-area: part4;
+            }
+            .grid-c5{
+                
+                grid-area: part5;
+            }
+            .grid-c6{
+                
+                grid-area: part6;
+            }
             
             .col-lg-6{
                 
-                display: flex;
-                justify-content: center;
-                
+                width: auto;
+                margin: 0 auto;
+            
             
 
             
@@ -54,25 +91,7 @@
                 text-align: center;
                 font-style: italic;
                 line-height: 3.4rem;
-                font-size: 0.8rem;
-            }
-            .grid-c1{
-                grid-area: column1;
-            }
-            .grid-c2{
-                grid-area: column2;
-            }
-            .grid-c3{
-                grid-area: column3;
-            }
-            .grid-c4{
-                grid-area: column4;
-            }
-            .grid-c5{
-                grid-area: column5;
-            }
-            .grid-c6{
-                grid-area: column6;
+                font-size: 0.9rem;
             }
 }
 }
@@ -80,25 +99,28 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+    .hero{
+    .container{
     .row{
         padding: 25px 0;
-        
-            
-            display: grid;
-            grid-template-columns: 2, 1fr;
+        display: grid;
+            grid-template-columns: repeat(2, 34rem);
             gap: 20px;
             grid-template-areas:
-            "column1 column2"
-            "column3 column4"
-            "column5 column6";
+            "part1 part2"
+            "part3 part4"
+            "part5 part6";
             align-items: center;
             
         .col-12{
             .imagenes__cocineros{
-                width: 18rem;
+                width: 28rem;
+                margin: 0 auto;
             }
         }
+        }
+    }
     }
 
 }
