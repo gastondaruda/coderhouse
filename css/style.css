@@ -333,9 +333,11 @@
     margin: 0 10px;
     justify-content: center; }
     .container__grid .grid__item .grid__image {
-      filter: grayscale(1); }
+      filter: grayscale(1);
+      transition: .4s; }
     .container__grid .grid__item .grid__image:hover {
-      filter: grayscale(0); } }
+      filter: grayscale(0);
+      transform: scale(1.1); } }
 
 .form {
   width: 90%;
